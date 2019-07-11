@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../LY.css/my-index.css">
+</head>
+<body>
+<header class="position-fixed head_a ">
+    <div class="container clearfix">
+        <div class="navbar navbar-expand-md navbar-black p-0">
+            <!--不隐藏的-->
+            <a href="#" class="navbar-brand navbar-nav float-left"><img class="l-h-80" src="../ccpt_6/res/static/img/logo.png" alt=""/></a>
+            <!--按钮-->
+            <button data-toggle="collapse" data-target="#content" class="navbar-toggler navbar-black navbar-light">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <!--sm屏纵向排列，md屏横向排列-->
+            <div id="content" class="collapse navbar-collapse justify-content-xl-end justify-content-md-around">
+                <ul class="navbar-nav ">
+                    <li class="nav-item m-53 l-h-80">
+                        <a href="#" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item m-53 l-h-80">
+                        <a href="my-product.html" class="nav-link">产品</a>
+                    </li>
+                    <li class="nav-item m-53 l-h-80">
+                        <a href="#" class="nav-link">教程</a>
+                    </li>
+                    <li class="nav-item m-53 l-h-80">
+                        <a href="#" class="nav-link">案列</a>
+                    </li>
+                    <li class="nav-item m-53 l-h-80">
+                        <a href="#" class="nav-link">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!--轮播图-->
+    <div id="jiant" class="carousel" data-ride="carousel">
+        <!--图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="lunbotu" src="../ccpt_6/res/static/img/banner1.jpg" alt=""/>
+                <div class="img_text">
+                    <p class="p1">类友网络</p>
+                    <p class="p2_2">完美前端体验</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="lunbotu" src="../ccpt_6/res/static/img/banner2.jpg" alt=""/>
+                <div class="img_text">
+                    <p class="p1">类友网络</p>
+                    <p class="p2">Perfect Front-end Experience</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="lunbotu" src="../ccpt_6/res/static/img/banner3.jpg" alt=""/>
+                <div class="img_text">
+                    <p class="p1">类友网络</p>
+                    <p class="p2">Perfect Front-end Experience</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="lunbotu" src="../ccpt_6/res/static/img/banner4.jpeg" alt=""/>
+                <div class="img_text">
+                    <p class="p1">类友网络</p>
+                    <p class="p2">Perfect Front-end Experience</p>
+                </div>
+            </div>
+        </div>
+        <!--箭头-->
+        <a data-slide="prev" class="carousel-control-prev ml-4" href="#jiant">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a data-slide="next" class="carousel-control-next mr-4" href="#jiant">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!--提示-->
+        <ul class="carousel-indicators">
+            <li data-toggle="#jiant" data-slide-to="0" class="active" ></li>
+            <li data-toggle="#jiant" data-slide-to="1" ></li>
+            <li data-toggle="#jiant" data-slide-to="2" ></li>
+            <li data-toggle="#jiant" data-slide-to="3" ></li>
+        </ul>
+    </div>
+<!-- 主体(main)部分 L1 -->
+<div class="container">
+    <div  id="L1">
+    <p class="title">专为前端而研制的<span>核心产品</span></p>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+            <div id="border">
+            <div><img src="../ccpt_6/res/static/img/Big_icon1.png"></div>
+            <div id="text_1">
+                <p class="m-0 height">JS基础库</p>
+                <p class="m-0 height-1">从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                <a href="#">查看产品 ></a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+            <div id="border">
+            <div><img src="../ccpt_6/res/static/img/Big_icon2.png"></div>
+            <div id="text_1">
+                <p class="m-0 height">CSS处理</p>
+                <p class="m-0 height-1">从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                <a href="#">查看产品 ></a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+            <div id="border">
+            <div><img src="../ccpt_6/res/static/img/Big_icon3.png"></div>
+            <div id="text_1">
+                <p class="m-0 height">兼容性</p>
+                <p class="m-0 height-1">从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                <a href="#">查看产品 ></a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+            <div id="border">
+            <div><img src="../ccpt_6/res/static/img/Big_icon4.png"></div>
+            <div id="text_1">
+                <p class="m-0 height">响应式</p>
+                <p class="m-0 height-1">从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                <a href="#">查看产品 ></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--服务区 L2-->
+    <div id="L2">
+        <p class="title">为客户打造完美的<span>专业服务</span></p>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 p-0">
+            <div class="p-40">
+            <div class="content-left"><img src="../ccpt_6/res/static/img/home_img1.jpg" alt=""/></div>
+            <div class="content-right">
+                <p class="p1">1 对 1 前端指导</p>
+                <hr/>
+                <p class="p2">更有多个包含不同主题的Web组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 p-0">
+            <div class="p-40">
+            <div class="content-left"><img src="../ccpt_6/res/static/img/home_img2.jpg" alt=""/></div>
+            <div class="content-right">
+                <p class="p1">1 对 1 前端指导</p>
+                <hr/>
+                <p class="p2">更有多个包含不同主题的Web组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 p-0">
+            <div class="p-40">
+            <div class="content-left"><img src="../ccpt_6/res/static/img/home_img3.jpg" alt=""/></div>
+            <div class="content-right">
+                <p class="p1">1 对 1 前端指导</p>
+                <hr/>
+                <p class="p2">更有多个包含不同主题的Web组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 p-0">
+            <div class="p-40">
+            <div class="content-left"><img src="../ccpt_6/res/static/img/home_img4.jpg" alt=""/></div>
+            <div class="content-right">
+                <p class="p1">1 对 1 前端指导</p>
+                <hr/>
+                <p class="p2">更有多个包含不同主题的Web组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="bottom-a"><a href="#">查看更多</a></div>
+</div>
+<footer>
+    <div id="foot_da" class="container">
+    <p id="foot_a">
+        <a href="#">合作伙伴</a>
+        <a href="#">企业画报</a>
+        <a href="#">JS网</a>
+        <a href="#">千图网</a>
+        <a href="#">昵图网</a>
+        <a href="#">素材网</a>
+        <a href="#">花瓣网</a>
+    </p>
+    <div class="row">
+        <div class="col-sm-2 col-lg-1"><img id="foot_img" src="../ccpt_6/res/static/img/erweima.jpg" alt=""/></div>
+        <div class="col-sm-10 col-lg-11">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-9">
+                    <p class="foot_dh"><img src="../ccpt_6/res/static/img/phone.png" alt=""/><i class="font_style">&nbsp;400-8888888&nbsp;&nbsp;&nbsp;(9:00-18:00)</i></p>
+                    <p><img src="../ccpt_6/res/static/img/email.png" alt=""/><i class="font_style">&nbsp;88888888@163.com</i></p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 m-0">
+                    <p class="foot_dh font_style">重庆市渝中区两路口</p>
+                    <p class="font_style">Copyright © 2019-2025 Huazai - Collect from 网页模板</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
