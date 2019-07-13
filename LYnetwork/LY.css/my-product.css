@@ -57,7 +57,7 @@
 /*  banner部分  */
 .back-img{height: 320px; margin-top: 80px;}
 .back-img{background: url(../ccpt_6/res/static/img/nav_img1.jpg) no-repeat center top;background-size: cover;}
-.back-img .title{padding-top: 120px;transition: 1.5s;}
+.back-img .title{padding-top: 120px;animation:bouncelnUp 1s;}
 .back-img .title .pd{
     font-size: 20px;
     letter-spacing: 3px;
@@ -70,7 +70,59 @@
     letter-spacing: 5px;
     margin: 0px;
 }
+/*  main部分  */
+.main{padding: 30px 0 75px 0;}
+.padbor{
+    padding: 50px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.padbor img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+.padbor .label{
+    color:#565656;
+    font-size:30px;
+    line-height:78px;
+    margin-top:25px;
+    margin-bottom: 0px;
+}
+.padbor .detali{
+    font-size: 16px;
+    line-height: 28px;
+    color: #d7d7d7;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+.padbor a{
+    color: #a0d2cc;
+    font-size: 16px;
+    line-height: 38px;
+    padding: 10px 11px 10px 23px;
+    border: 1px solid #a0d2cc;
+    border-radius: 3px;
+    text-decoration: none;
+}
 
+.padbor:after, .padbor:before {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+@media (min-width:768px) {
+    .padbor img{text-align: left;}
+    .col-md-7{width:50%;}
+}
+@media (max-width: 992px) and (min-width: 768px) {
+ .padbor .label{
+    line-height: 40px !important;
+    margin:0px 0px 10px !important;
+    }
+ .padbor .detali{padding-bottom: 15px;}   
+}
 /*  底部  */
 footer{width:100%;height:100%;background: #5e6664;padding-bottom:70px;}
 #foot_a {
