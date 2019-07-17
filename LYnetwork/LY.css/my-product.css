@@ -54,10 +54,16 @@
     border-bottom:2px solid #4aca6d;
 }
 
+/* 双态按钮标记  */
+.aa .act-a{
+    color:#4aca6d !important;
+    margin-top:-2px;
+    border-bottom:2px solid #4aca6d;
+}
+
 /*  banner部分  */
 .back-img{height: 320px; margin-top: 80px;}
 .back-img{background: url(../ccpt_6/res/static/img/nav_img1.jpg) no-repeat center top;background-size: cover;}
-.back-img .title{padding-top: 120px;animation:bouncelnUp 1s;}
 .back-img .title .pd{
     font-size: 20px;
     letter-spacing: 3px;
@@ -69,6 +75,16 @@
     line-height: 50px;
     letter-spacing: 5px;
     margin: 0px;
+}
+
+.title.aav{
+    padding-top:120px;
+    opacity: 1;
+}
+.title{
+    padding-top: 180px;
+    transition: 1.5s;
+    opacity: 0;
 }
 /*  main部分  */
 .main{padding: 30px 0 75px 0;}
