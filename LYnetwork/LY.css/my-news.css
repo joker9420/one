@@ -89,9 +89,82 @@
     letter-spacing: 3px;
 }
 
+/*   图片内容区   */
+#tuwen{padding: 70px 0 80px 0;}
+.pad-40 .img-a{
+    width:30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.pad-40 .text-a{
+    width:70%;
+    display: inline-block;
+    padding:5px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.pad-40 .img-a img{width:90%}
+/*
+@media (min-width: 1200px) {
+    #tuwen .cont:nth-child(odd) {
+    padding-right: 20px;
+    }
+    #tuwen .col-lg-6{width:50%;float: left}
+    .pad-40 .img-a{width: 37% !important;}
+    .pad-40 .text-a{width:63% !important;}
+}
+@media (min-width:992px) {
+    .pad-40 .img-a{width: 20%;}
+    .pad-40 .text-a{width:80%;}
+}*/
+/*@media (min-width:1199px) and (max-width:992px) {
+    #tuwen .row .col-lg-6{flex-basis: 0 !important}
+}*/
+.clear-both{clear:both}
+.pad-40 .img-a img{
+    display:inline-block;
+    widows: 50%;
+    vertical-align: top;
+}
+.row .col-lg-6.padd-10{padding:10px !important}
+#tuwen>.row:before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-lg-6.padd-10{
+    padding-bottom: 40px;
+    position: relative;
+    border-bottom:2px dashed #eaeaea;
+}
 
-
-
+@media (min-width:768px) {
+.pad-40 .text-a strong a{
+    font-size:20px;
+    line-height:30px;
+    }
+}
+@media (min-width:1199px) {
+    .pad-40 .text-a{float: left!important}
+}
+.pad-40 .text-a strong a{
+    display: block;
+    color: #555;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pad-40 .text-a .detail span{
+    color:#777;
+    line-height:24px;
+    font-size:14px;
+}
+.pad-40 .text-a .detail a{
+    color:#333;
+    text-decoration: none;
+}
 /*  <!-- 底部 -->  */ 
 footer{width:100%;height:100%;background: #5e6664;padding-bottom:70px;}
 #foot_a {
