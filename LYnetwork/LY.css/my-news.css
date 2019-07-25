@@ -104,22 +104,6 @@
     vertical-align: top;
 }
 .pad-40 .img-a img{width:90%}
-/*
-@media (min-width: 1200px) {
-    #tuwen .cont:nth-child(odd) {
-    padding-right: 20px;
-    }
-    #tuwen .col-lg-6{width:50%;float: left}
-    .pad-40 .img-a{width: 37% !important;}
-    .pad-40 .text-a{width:63% !important;}
-}
-@media (min-width:992px) {
-    .pad-40 .img-a{width: 20%;}
-    .pad-40 .text-a{width:80%;}
-}*/
-/*@media (min-width:1199px) and (max-width:992px) {
-    #tuwen .row .col-lg-6{flex-basis: 0 !important}
-}*/
 .clear-both{clear:both}
 .pad-40 .img-a img{
     display:inline-block;
@@ -164,6 +148,14 @@
 .pad-40 .text-a .detail a{
     color:#333;
     text-decoration: none;
+}
+/*  页面分页  */
+#fenye ul{
+    margin-top:70px;
+    justify-content: center;
+}
+.fenye .pagination .page-item a{
+    border-radius: 5px;
 }
 /*  <!-- 底部 -->  */ 
 footer{width:100%;height:100%;background: #5e6664;padding-bottom:70px;}
