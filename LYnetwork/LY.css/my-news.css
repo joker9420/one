@@ -83,12 +83,12 @@
     text-align: center;
     line-height: 50px;
     letter-spacing: 5px;
+    margin:0;
 }
-.title p .p1{
+.title p.p1{
     font-size: 20px;
     letter-spacing: 3px;
 }
-
 /*   图片内容区   */
 #tuwen{padding: 70px 0 80px 0;}
 .pad-40 .img-a{
