@@ -52,14 +52,14 @@
         </div>
     </div>
     <!-- 关于 -->
-    <div class="container guanyu">
+    <div class="container guanyu accordion" id="content">
         <ul class="bb">
-            <li class="lis act-c"><a class="xuan act-b" href="#">公司简介</a></li>
-            <li class="lis"><a class="xuan" href="#">招贤纳士</a></li>
-            <li class="lis"><a class="xuan" href="#">发展历程</a></li>
+            <li class="lis"><a class="xuanzhong" data-target="s11" href="javascript:;">公司简介</a></li>
+            <li class="lis"><a data-target="s12" href="javascript:;">招贤纳士</a></li>
+            <li class="lis"><a data-target="s13" href="javascript:;">发展历程</a></li>
         </ul>
         <!-- 公司简介 -->
-        <div class="row mt-30">
+        <div id="s11" class="row mt-30">
             <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                 <div class="ttw">
                     <div class="div-img"><img src="../ccpt_6/res/static/img/us_img1.jpg" alt=""></div>
@@ -99,7 +99,7 @@
 
         </div>
         <!-- 招纳贤士 -->
-        <div class="zhaos">
+        <div id="s12" class="zhaos" style="display:none">
             <div id="content">
                 <p class="ppa">前端开发工程师</p>
                 <p class="ppb">> 职位描述</p>
@@ -137,41 +137,41 @@
             </div>
         </div>
         <!-- 发展历程 -->
-        <div class="fazhan">
-          <p class="title">我们的蜕变</p>
-          <ul class="timeline">
-            <li class="odd">
-              <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img4.png"></div>
-              <div class="cour-panel">
-                <p class="label">2017 年 6 月</p>
-                <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
-              </div>
-            </li>
-            <li>
-              <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img5.png"></div>
-              <div class="cour-panel">
-                <p class="label">2017 年 6 月</p>
-                <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
-              </div>
-            </li>
-            <li class="odd">
-              <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img6.png"></div>
-              <div class="cour-panel">
-                <p class="label">2017 年 6 月</p>
-                <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
-              </div>
-            </li>
-            <li>
-              <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img7.png"></div>
-              <div class="cour-panel">
-                <p class="label">2017 年 6 月</p>
-                <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
-              </div>
-            </li>
-            <li class="odd">
-              <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img8.png"></div>
-            </li>
-          </ul>
+        <div id="s13" class="fazhan" style="display:none">
+            <p class="titles">我们的蜕变</p>
+            <ul class="timeline">
+                <li>
+                    <div class="cour-img col-md-6"><img src="../ccpt_6/res/static/img/us_img4.png"></div>
+                    <div class="cour-panel col-md-6">
+                        <p class="label">2017 年 6 月</p>
+                        <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img5.png"></div>
+                    <div class="cour-panel">
+                        <p class="label">2017 年 6 月</p>
+                        <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img6.png"></div>
+                    <div class="cour-panel">
+                        <p class="label">2017 年 6 月</p>
+                        <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img7.png"></div>
+                    <div class="cour-panel">
+                        <p class="label">2017 年 6 月</p>
+                        <p>我们成立了，来到了杭州西湖这个美丽的地方。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cour-img"><img src="../ccpt_6/res/static/img/us_img8.png"></div>
+                </li>
+            </ul>
         </div>
     </div>
     <footer>
@@ -201,8 +201,26 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script>
+        // <!-- 公司简介\招纳贤士\发展历程 -->
+    var spans=document.querySelectorAll(".bb>li>a");
+    var divs=document.querySelectorAll(".accordion>div");
+    for(var span of spans){
+        span.addEventListener("click",function(e){
+            for(var i=0;i<spans.length;i++){
+                spans[i].className="";
+                divs[i].style.display="none"
+            }
+            e.target.className="active xuanzhong";
+            var n=e.target.getAttribute("data-target");
+            var x=document.getElementById(n);
+            n=="s11"?x.style.display="flex":x.style.display="block";
+        })
+    }
+    </script>
 </body>
     <script src="../LY.js/jquery-1.11.3.js"></script>
     <script src="../LY.js/index.js"></script>
+
 </html>

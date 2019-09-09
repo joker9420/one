@@ -23,7 +23,7 @@
     transition: 0.3s;
     padding: 0;
 }
-.nav .nav-logo{height: 100%; position: absolute; top: 0; left: 15px; line-height: 80px;}
+/* .nav .nav-logo{height: 100%; position: absolute; top: 0; left: 15px; line-height: 80px;} */
 .nav-item{margin-left: 30px;}
 
 .navbar-nav{font-size: 18px;}

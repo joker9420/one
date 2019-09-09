@@ -54,12 +54,15 @@
     border-bottom:2px solid #4aca6d;
 }
 
+
 /* 双态按钮标记  */
 .aa .act-a{
     color:#4aca6d !important;
     margin-top:-2px;
     border-bottom:2px solid #4aca6d;
 }
+
+
 
 /* 顶部图文 */
 .banner{
@@ -91,32 +94,60 @@
     padding-top:120px;
     opacity: 1;
 }
-/* 关于 */
+
+
+
+/* 关于 *//* 图文导航栏 */
 .guanyu ul{padding:100px 0;text-align: center;}
 .guanyu .bb li{
     list-style: none;
     display: inline-block;
-    padding:0 30px;
-    margin-left: 30px;
-    line-height: 50px;
-    border:1px solid #b5b5b5;
+    
 }
 .guanyu ul li a{
     color:#b5b5b5;
     font-size: 20px;
-}
-/* 图文导航栏 */
-.guanyu ul li a:hover{text-decoration: none;}
-.bb .act-c{
-    list-style: none;
-    display: inline-block;
-    padding:0 30px;
+    padding:10px 30px;
     margin-left: 30px;
     line-height: 50px;
-    border:1px solid #2ab5a3 !important;
-    color:#2ab5a3;
+    border:1px solid #b5b5b5;
 }
-.bb .act-b{color:#2ab5a3;}
+.guanyu ul li a:hover{
+    text-decoration: none;  
+    color:#2ab5a3;
+    border: 1px solid #2ab5a3;
+}
+.guanyu ul li a.xuanzhong{
+    text-decoration: none;  
+    color:#2ab5a3;
+    border: 1px solid #2ab5a3;
+}
+.guanyu .act-b{
+    color:#2ab5a3;
+    font-size: 20px;
+    padding:10px 30px;
+    margin-left: 30px;
+    line-height: 50px;
+    border:1px solid #2ab5a3;
+}
+
+
+
+/* 发展历程 */
+.fazhan .titles{
+    font-size:28px;
+    text-align: center;
+}
+.guanyu ul.timeline{padding:50px 0 100px 0}
+.timeline li{list-style: none;position: relative;}
+.timeline li .cour-img{
+    padding:0;
+    margin: 0;
+}
+.timeline li.cour-panel{
+    padding:0;
+}
+
 /* 图文区 */
 .row.mt-30{margin-bottom:120px;}
 .ttw .div-img img{width:100%;}
@@ -176,6 +207,8 @@
         line-height:60px;
     }
 }
+
+
 /*  底部  */
 footer{width:100%;height:100%;background: #5e6664;padding-bottom:70px;}
 #foot_a {

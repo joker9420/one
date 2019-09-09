@@ -98,8 +98,9 @@
     padding:120px 0 20px;
     border-bottom:2px solid #c9c9c9;
 }
+.anl-img{overflow: hidden;}
 .anl-img img{width:100%;transition: 2s;}
-.anl-img img:hover{transform: scale(1.1)}
+.anl-img img:hover{transform: scale(1.2,1.2)}
 .anl-text p{
     color:#505050;
     font-size:18px;
